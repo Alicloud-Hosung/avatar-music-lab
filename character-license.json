@@ -1,0 +1,24 @@
+{
+  "name": "HairSample_Male",
+  "author": "pixiv / VRoid",
+  "license": "CC0-1.0",
+  "official_conditions": "https://vroid.pixiv.help/hc/en-us/articles/4402614652569",
+  "distribution_source": "https://github.com/madjin/vrm-samples/blob/master/vroid/beta/HairSample_Male.vrm",
+  "embedded_meta": {
+    "version": "",
+    "author": "",
+    "contactInformation": "",
+    "reference": "",
+    "title": "HairSample_Male",
+    "texture": 24,
+    "allowedUserName": "Everyone",
+    "violentUssageName": "Allow",
+    "sexualUssageName": "Allow",
+    "commercialUssageName": "Allow",
+    "otherPermissionUrl": "",
+    "licenseName": "CC0",
+    "otherLicenseUrl": ""
+  },
+  "sha256": "7aeca142dabbc26ba0f5b9c998c8f3cb6df341287d67788427ac837223785a3f",
+  "modifications": "Runtime material conversion to MeshStandardMaterial; clothing tint; retargeted motion; expression and hair control; ear accessory. VRM source file remains unmodified."
+}
