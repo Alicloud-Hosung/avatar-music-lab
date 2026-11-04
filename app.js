@@ -88,7 +88,7 @@ async function boot(){
     performer=await loadPerformer(stage.scene,percent=>{if(percent)$('#loading').lastChild.textContent=`3D 가수를 불러오는 중 ${percent}%`;});
     analysisData=await data;if(analysisData){duration=Math.min(audio.duration||45,analysisData.duration);seek.max=String(duration);$('#duration').textContent=fmt(duration);}
     comparison=createComparison($('#pose-preview'),$('#avatar-preview'),stage);
-    $('#loading').hidden=true;$('#render-status').textContent='VRM / AUDIO TIMELINE';play.disabled=!!audio.error;selectTheme(theme);
+    $('#loading').hidden=true;$('#render-status').textContent='VRM / AUDIO TIMELINE';play.disabled=!!audio.error;$('#play-comparison').disabled=!!audio.error;selectTheme(theme);
   }catch(e){console.error('Stage initialization failed:',e.message);$('#loading').textContent='3D 무대를 불러오지 못했습니다. WebGL을 지원하는 브라우저에서 다시 열어주세요.';$('#render-status').textContent='로딩 실패';}
 }
 boot();
